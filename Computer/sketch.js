@@ -14,7 +14,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  var cnv = createCanvas(windowWidth, windowHeight);
+  cnv.style('display', 'block');
   background(50);
   fill(255);
   textFont(font);
