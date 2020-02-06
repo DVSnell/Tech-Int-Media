@@ -25,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-  text(dia, windowWidth / 5, windowHeight / 5, windowWidth / 1.5, windowHeight / 1.5);
+  text(dia, windowWidth / 5, windowHeight / 2, windowWidth / 1.5, windowHeight / 1.5);
 }
 
 function keyPressed() {
