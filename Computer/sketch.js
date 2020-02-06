@@ -1,5 +1,3 @@
-let w = 1200;
-let h = 700;
 let dia;
 let randCom = ["Place your left hand on your head.",
 "Assume a T-pose.", "Turn 90 degrees to your right.",
@@ -16,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(w, h);
+  createCanvas(windowWidth, windowHeight);
   background(50);
   fill(255);
   textFont(font);
@@ -26,7 +24,7 @@ function setup() {
 }
 
 function draw() {
-  text(dia, w / 5, h / 5, w / 1.5, h / 1.5);
+  text(dia, windowWidth / 5, windowHeight / 5, windowWidth / 1.5, windowHeight / 1.5);
 }
 
 function keyPressed() {
@@ -66,4 +64,8 @@ function mousePressed() {
     let fs = fullscreen();
     fullscreen(!fs);
   }
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowheight);
 }
