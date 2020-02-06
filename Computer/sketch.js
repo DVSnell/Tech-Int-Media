@@ -60,7 +60,7 @@ function keyPressed() {
 }
 
 function mousePressed() {
-  if (mouseX > 0 && mouseX < w && mouseY > 0 && mouseY < h ) {
+  if (mouseX > 0 && mouseX < windowWidth && mouseY > 0 && mouseY < windowHeight ) {
     let fs = fullscreen();
     fullscreen(!fs);
   }
