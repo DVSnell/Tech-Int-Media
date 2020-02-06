@@ -1,5 +1,5 @@
-let w = 1720;
-let h = 1000;
+let w = 1000;
+let h = 700;
 let dia;
 let randCom = ["Place your left hand on your head.",
 "Assume a T-pose.", "Turn 90 degrees to your right.",
