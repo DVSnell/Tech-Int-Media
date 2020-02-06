@@ -1,4 +1,4 @@
-let w = 1000;
+let w = 1200;
 let h = 700;
 let dia;
 let randCom = ["Place your left hand on your head.",
