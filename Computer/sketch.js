@@ -19,7 +19,7 @@ function setup() {
   background(50);
   fill(255);
   textFont(font);
-  textSize(36);
+  textSize(48);
   textAlign(CENTER);
   imp = random(randImp);
 }
