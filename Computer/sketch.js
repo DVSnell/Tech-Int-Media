@@ -14,7 +14,7 @@ function preload() {
 }
 
 function setup() {
-  var cnv = createCanvas(windowWidth, windowHeight);
+  var cnv = createCanvas(displayWidth, displayHeight);
   cnv.style('display', 'block');
   background(50);
   fill(255);
@@ -25,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-  text(dia, windowWidth / 5, windowHeight / 2, windowWidth / 1.5, windowHeight / 1.5);
+  text(dia, displayWidth / 5, displayHeight / 2, displayWidth / 1.5, displayHeight / 1.5);
 }
 
 function keyPressed() {
@@ -61,12 +61,12 @@ function keyPressed() {
 }
 
 function mousePressed() {
-  if (mouseX > 0 && mouseX < windowWidth && mouseY > 0 && mouseY < windowHeight ) {
+  if (mouseX > 0 && mouseX < displayWidth && mouseY > 0 && mouseY < displayHeight ) {
     let fs = fullscreen();
     fullscreen(!fs);
   }
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowheight);
+  resizeCanvas(displayWidth, displayheight);
 }
